@@ -1,0 +1,57 @@
+import Layout from "../components/layout";
+import Carousel from 'react-material-ui-carousel'
+import Seo from "../components/seo"
+import {Typography, Paper} from "@mui/material";
+import Slider from '@mui/material/Slider';
+
+<Layout>
+
+------------------------------------------------
+
+<br/> <br/>
+
+# About
+
+<Typography variant="h5" component="h4">
+
+> “Non-profit society of Amateur radio operators (HAMS) and Amateur Radio enthusiasts in and around Chennai/Madras”
+
+</Typography>
+
+<br/>
+
+## Our Objectives
+
+<Carousel swipe stopAutoPlayOnHover height="110px">
+  {
+    [
+      "Provide opportunity to the members of the society to meet together periodically to exchange ideas and experiences and to promote social and cultural contacts amongst the ham fraternity in general.",
+      "Establish and maintain a club station for the members to operate amateur radio station subject to their being in possession of valid Amateur wireless Telegraph station licence of the appropriate category and to provide facilities for investigating and conducting experiments in wireless communication.",
+      "Arrange and conduct for the benefit of the members, exercises in amateur radio such as field days, expeditions, fox-hunts, contact contests, etc.",
+      "Provide opportunity for the members to engage themselves in constructing amateur radio equipment and accessories and in any other activity related to the development of amateur radio.",
+      "Advance and propagate amongst the members and others, the hobby of amateur radio, by encouraging and arranging lectures, seminars, exhibitions, demonstrations etc.",
+      "Provide education and training to members and other persons interested in becoming hams and for this purpose to conduct classes and training programmes, and to help such persons appear for Amateur Station Operator’s Certificate (ASOC) examinations.",
+      "Publish periodicals, Books, study materials etc. for free distribution or sale to members and others.",
+      "Establish and operate a QSL Bureau for the purpose of clearing and forwarding acknowledgements sent by and to amateur radio stations are operated by the members of the society.",
+      "Establish and maintain a library of Books, magazines and other publication in any form dealing with amateur radio or related subjects.",
+      "Render public service by establishing communication links during disasters and emergencies provided such operations do not contravene the relevant rules and regulations.",
+      "Co-operate with other similar organizations in India or aboard to promote, protect and further the objects of the society.",
+      "Grant awards and honour persons, whether members or not, in recognition their services to the development of the hobby of amateur radio."
+    ].map((item, i) => <Typography variant="p" component="p"><p>{item}</p></Typography>)
+  }
+</Carousel>
+
+## Address / Contact
+```
+Regn.No     : 346/2023
+Regd.Office :
+Plot #85, Part 1, 1st Main Road
+Golden Sea view Layout, Palavakkam
+Chennai 600041
+
+info@mars-ars.org
+```
+
+</Layout>
+
+export const Head = () => <Seo title="About" />
