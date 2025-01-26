@@ -25,9 +25,14 @@
     "remark-gfm": "^3.0.1"
   },
   "devDependencies": {
+    "firebase": "^11.2.0",
     "prettier": "^2.8.8"
   },
   "license": "0BSD",
+  "engines" : { 
+    "npm" : ">=8.0.0 <9.0.0",
+    "node" : ">=18.0.0 <19.0.0"
+  },
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -35,7 +40,8 @@
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "deploy": "firebase deploy --only hosting"
   },
   "repository": {
     "type": "git",
